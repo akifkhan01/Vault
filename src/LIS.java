@@ -12,8 +12,8 @@ class LIS {
       lis[i] = 1;
     
     /* Compute optimized values in bottom up manner */
-    for( i=0; i<n; i++) {
-      for( j=0; j<n; j++)
+    for( i=1; i<n; i++) {
+      for( j=0; j<i; j++)
 	if ( arr[i] > arr[j] && lis[i] < lis[j] + 1)
 	  lis[i] = lis[j] + 1;
     }				
