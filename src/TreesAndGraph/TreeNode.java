@@ -22,4 +22,11 @@ public class TreeNode {
 		this.preOrderTraversal(node.right);
 	}
 
+	void inOrderTraversal(TreeNode node) {
+
+		if(node == null) return;
+		this.inOrderTraversal(node.left);
+		System.out.println(node.getKey() + " ");
+		this.inOrderTraversal(node.right);
+	}
 }
