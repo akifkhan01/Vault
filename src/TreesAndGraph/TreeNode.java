@@ -29,4 +29,12 @@ public class TreeNode {
 		System.out.println(node.getKey() + " ");
 		this.inOrderTraversal(node.right);
 	}
+
+	void postOrderTraversal(TreeNode node) {
+
+		if(node == null) return;
+		this.postOrderTraversal(node.left);
+		this.postOrderTraversal(node.right);
+		System.out.println(node.getKey() + " ");
+	}
 }
