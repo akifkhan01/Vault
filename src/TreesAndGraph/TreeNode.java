@@ -1,7 +1,7 @@
 package TreesAndGraph;
 
 public class TreeNode {
-	int key;
+	private int key;
 
 	TreeNode left, right;
 
