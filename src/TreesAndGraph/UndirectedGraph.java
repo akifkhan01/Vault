@@ -18,28 +18,13 @@ public class UndirectedGraph {
 		vCount++;
 	}
 
-	// Need to revisit to handle all cases
-	// void removeVertex(String name) {
-
-	// 	if(!adjVertices.isEmpty()) {
-	// 		for (Map.Entry<String, List<String>> entry : adjVertices.entrySet()) {
-	//         	entry.getValue().remove(name);
-	//     	}
-	// 		adjVertices.remove(name);
-	// 		vCount--;
-	// 	}
-	// }
-
 	void addEdge(String v1, String v2) {
 
-		if(adjVertices.get(v1) != null) { 
+		if(adjVertices.get(v1) != null && adjVertices.get(v2) != null) { 
 			adjVertices.get(v1).add(v2);
-		}
-
-		if(adjVertices.get(v2) != null) {
 			adjVertices.get(v2).add(v1);
+			eCount++;
 		}
-		eCount++;
 	}
 
 	void removeEdge(String v1, String v2) {
