@@ -40,7 +40,7 @@ class CutRod {
 
 		int n;
 		int[] p;
-		p = new int[] {1,5,8,9,10,17,17};
+		p = new int[] {3,5,8,9,10,17,17,20};
 		n = p.length;
 		CutRodOptimal(p, n);
 	}
