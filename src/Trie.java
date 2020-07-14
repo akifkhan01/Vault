@@ -87,6 +87,8 @@ public class Trie {
 
 		trie.insert("ana");
 		trie.insert("and");
+		trie.insert("and");
+		trie.insert("and");
 		trie.insert("ann");
 		trie.insert("bag");
 		trie.insert("cat");
